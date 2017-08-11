@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.005);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    background: #f7f7f7;
+    color: @color-one;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    height: 100vh;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 0;
+    transition: opacity ease-in-out 1.0s;
+}
+
+.fade-enter-to {
+    opacity: 1;
+}
+
+.fade-leave {
+    opacity: 0;
+}
+
+.fade-leave-active {
+    opacity: 0;
+    display: none;
+    transition: opacity ease-in-out 1.0s;
+}
+
+.fade-leave-to {
+    opacity: 0;
+}

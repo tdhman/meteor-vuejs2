@@ -1,0 +1,121 @@
+.btn {
+  background-image: none;
+  border: none;
+  text-shadow: none;
+  border-radius: @btn-border-radius-base;
+  text-transform: uppercase;
+  transition: all .1s linear;
+  box-shadow: 0 0 10px fade(@color-one, 10%);
+  font-weight: 600;
+  padding-left: 30px;
+  padding-right: 30px;
+  min-width: 130px;
+  outline: none;
+}
+
+.btn {
+  &:hover, &:active, &:focus {
+    box-shadow: 0 0 15px fade(@color-one, 20%);
+    outline: none;
+  }
+}
+
+.btn:disabled {
+  background: fade(@color-one, 20%) !important;
+  color: fade(@color-one, 50%) !important;
+  box-shadow: none !important;
+}
+
+.btn-white {
+  background: white;
+  border-color: white;
+  color: @color-two;
+  border: 1px solid @color-two;
+  &:hover, &:active, &:focus {
+    background: white !important;
+    color: @color-two;
+  }
+}
+
+.btn-dark {
+  background: @color-one;
+  box-shadow: 0px -20px 100px 0px fade(@color-one, 50%) inset;
+  color: white;
+  border: none;
+  transition: all ease-in-out 0.2s;
+  &:hover, &:active, &:focus {
+    background: darken(@color-one, 2%);
+    box-shadow: 0 -20px 100px 0px fade(@color-one, 100%) inset;
+    color: white;
+  }
+}
+
+.btn-primary {
+  background: @color-two;
+  box-shadow: 0px -20px 100px 0px fade(@color-one, 50%) inset;
+  color: white;
+  border: none;
+  transition: all ease-in-out 0.2s;
+  &:hover, &:active, &:focus {
+    background: darken(@color-two, 2%);
+    box-shadow: 0 -20px 100px 0px fade(@color-one, 100%) inset;
+    color: white;
+  }
+}
+
+.btn-square {
+  border-radius: 0 !important;
+}
+
+.btn-xs {
+  border-radius: @btn-border-radius-small;
+  padding: 5px 15px;
+  min-width: auto;
+}
+
+.btn-sm {
+  border-radius: @btn-border-radius-small;
+  padding: 5px 15px;
+}
+
+.btn-lg {
+  font-weight: 700;
+}
+
+.btn-wrapper {
+  margin-top: 15px;
+  .btn {
+    display: inline-block;
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  .input-file {
+    margin-right: 15px;
+  }
+}
+
+.btn-link { 
+  color: @color-two;
+  background: transparent;
+  box-shadow: none;
+  border: none !important;
+  display: inline-block;
+  padding: 0 !important; 
+  margin: 0 !important;
+  outline: none;
+  &:hover {
+    color: darken(@color-two, 5%);
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn-wrapper {
+    text-align: center;
+    .btn {
+      margin-bottom: 5px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@color-one: #4c5c68;
+@color-two: #1985a1;
+@color-three: #46494c;
+
+@color-success: #2DBC72;
+@color-info: #1F4C7E;
+@color-warning: #DD6300;
+@color-danger: #FF3860;
+
+@gray-base:              #dcdcdc;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   #c5c3c6;
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+
+//BOOTSTRAP
+@brand-dark: @color-three;
+@brand-primary: @color-one;
+@brand-success: @color-two;
+@brand-info: @color-info;
+@brand-warning: @color-warning;
+@brand-danger: @color-danger;
+
+@state-success-text:             white;
+@state-success-bg:               @brand-success;
+@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
+@state-info-text:                white;
+@state-info-bg:                  @brand-info;
+@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+@state-warning-text:             white;
+@state-warning-bg:               @brand-warning;
+@state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
+@state-danger-text:              white;
+@state-danger-bg:                @brand-danger;
+@state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
+@body-bg:                        white;
+@text-color: @brand-dark;
+@navbar-height:                  60px;
