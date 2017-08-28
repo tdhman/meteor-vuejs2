@@ -1,3 +1,5 @@
+A skeleton project for web app development using Meteor + Vue2
+
 ## Init empty meteor projet (not necessary if use the clone project)
 
 ```
